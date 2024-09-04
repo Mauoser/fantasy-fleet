@@ -79,6 +79,7 @@ test:
 #
 production:
   <<: *default
-  database: fantasy_fleet_production
-  username: fantasy_fleet
-  password: <%= ENV["FANTASY_FLEET_DATABASE_PASSWORD"] %>
+  # database: fantasy_fleet_production
+  # username: fantasy_fleet
+  # password: <%= ENV["FANTASY_FLEET_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
